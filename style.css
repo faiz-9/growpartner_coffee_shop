@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+}
+.row-sides {
+  display: flex;
+}
+
+.top-navbar {
+  background-color: #333;
+  color: #fff;
+  height: 65px;
+  line-height: 65px;
+  padding-left: 40px;
+}
+.left-navbar {
+  background-color: #fef5e7;
+  padding: 0 25px;
+  width: 300px;
+  height: 100vh;
+}
+.flex-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-left h2 {
+  text-align: center;
+  margin: 25px 0 35px 0;
+}
+
+.flex-contents p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  background-color: #6e2c00;
+  padding: 12px 20px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  cursor: pointer;
+}
+
+select,
+#cups {
+  padding: 12px 20px;
+  border-radius: 4px;
+  width: 320px;
+  background-color: #e5e7e9;
+  border: none;
+}
+
+select {
+  margin-bottom: 18px;
+}
+
+.button {
+  text-align: center;
+}
+
+.button button {
+  background-color: #6e2c00;
+  padding: 10px 20px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 320px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#headingg {
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 30px 0 40px 0;
+}
+
+.right-content p {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+  height: 22px;
+  width: 22px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.main {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 21px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.geekmark {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  height: 22px;
+  width: 22px;
+
+  background-color: #e5e7e9;
+}
+
+.main input:checked ~ .geekmark:after {
+  display: block;
+}
+.main .geekmark:after {
+  left: 8px;
+  bottom: 5px;
+  width: 6px;
+  height: 13px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .top-navbar {
+    padding: 0;
+    text-align: center;
+  }
+
+  .row-sides {
+    flex-direction: column;
+  }
+
+  .left-navbar {
+    width: 100%;
+    height: auto;
+    padding: 0 126px;
+  }
+
+  .btn {
+    margin-bottom: 30px;
+  }
+
+  .button {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .left-navbar {
+    padding: 0 40px;
+  }
+
+  #headingg {
+    font-size: 1.5rem;
+  }
+
+  .right-content p {
+    font-size: 1.1rem;
+  }
+
+  select,
+  #cups {
+    width: 280px;
+  }
+
+  .right-side {
+    text-align: center;
+  }
+
+  .geekmark {
+    left: 66px;
+  }
+
+  .button button {
+    width: 260px;
+  }
+}

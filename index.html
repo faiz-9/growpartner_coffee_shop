@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Growpartner Coffee Shop</title>
+    <script src="script.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-navbar">
+        <h4>Growpartner Coffee Shop</h4>
+      </div>
+
+      <div class="row-sides">
+        <div class="left-navbar">
+          <div class="content-left">
+            <h2>Stock Available</h2>
+
+            <strong>
+            <div class="flex-contents">
+              <p>Water</p>
+              <p>1000</p>
+            </div>
+
+            <div class="flex-contents">
+              <p>Milk</p>
+              <p>1000</p>
+            </div>
+
+            <div class="flex-contents">
+              <p>Tea</p>
+              <p>200</p>
+            </div>
+
+            <div class="flex-contents">
+              <p>Coffee</p>
+              <p>200</p>
+            </div>
+
+            <div class="flex-contents">
+              <p>Sugar</p>
+              <p>500</p>
+            </div>
+
+          </strong>
+
+            <div class="btn">
+              <button onclick="document.location.reload(true)">Refill Stock</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <p id= 'headingg'>Welcome to the coffee shop</p>
+          <div class="right-content">
+           
+            <p>Select order preferences</p>
+
+            <body>
+        
+           
+            <select id= "drinks" placeholder="Select Drink Type" onchange = "handleChange();">
+
+              <option>
+              Strong Coffee 
+              </option>
+             
+              <option >
+                Light Coffee 
+              </option>
+              <option >
+                Strong Tea 
+              </option>
+              <option>
+                Light Tea 
+              </option>
+            
+             
+            </select>
+            <br/>
+
+               
+            <input type="number" min = "1" placeholder="Enter no.of cups" id="cups" onchange="handleChange()"/> <br />
+             <label class="main">
+               With Sugar
+              <input type="checkbox" id = 'sugar' />
+              <span class="geekmark"> </span>
+             </label>
+            <div class="button">
+              <button id = 'pay' onclick="handleDeduction()" >Pay Rs. 0 </button>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+
+    
+    
+
+    </script>
+
+
+  </body>
+</html>
